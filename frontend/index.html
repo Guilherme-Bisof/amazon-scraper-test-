@@ -14,27 +14,27 @@
                 <i class="fab fa-amazon"></i>
                 <h1>Amazon Product Scraper</h1>
             </div>
-            <p class="subtitle">Busque e extraia informações de produtos da Amazon</p>
+            <p class="subtitle">Search and extract information about Amazon Products</p>
         </header>
 
         <main class="main">
-            <!-- Formulário de Busca -->
+            <!-- Search Form -->
             <section class="search-section">
                 <div class="search-container">
                     <div class="input-group">
                         <input 
                             type="text" 
                             id="keywordInput" 
-                            placeholder="Digite o produto que deseja buscar..."
+                            placeholder="Search for a product..."
                             maxlength="100"
                         >
                         <button id="searchBtn" class="search-btn">
                             <i class="fas fa-search"></i>
-                            <span>Buscar Produtos</span>
+                            <span>Search Products</span>
                         </button>
                     </div>
                     <div class="search-tips">
-                        <small>💡 Dicas: Use palavras-chave específicas como "smartphone samsung", "notebook gamer", etc.</small>
+                        <small>💡 Tips: Use specific keywords like "smartphone samsung", "gaming laptop", etc.</small>
                     </div>
                 </div>
             </section>
@@ -43,42 +43,42 @@
             <section id="loadingSection" class="loading-section hidden">
                 <div class="loading-spinner">
                     <div class="spinner"></div>
-                    <p>Buscando produtos na Amazon...</p>
-                    <small>Isso pode levar alguns segundos</small>
+                    <p>Searching for products on Amazon...</p>
+                    <small>This may take some seconds</small>
                 </div>
             </section>
 
-            <!-- Resultados -->
+            <!-- Results -->
             <section id="resultsSection" class="results-section hidden">
                 <div class="results-header">
-                    <h2>Resultados da Busca</h2>
+                    <h2>Search Results</h2>
                     <div class="results-info">
-                        <span id="resultsCount">0 produtos encontrados</span>
+                        <span id="resultsCount">0 products founds</span>
                         <span id="searchKeyword"></span>
                     </div>
                 </div>
                 
                 <div id="productsContainer" class="products-grid">
-                    <!-- Produtos serão inseridos aqui via JavaScript -->
+                    <!-- Products will be inserted here via JavaScript -->
                 </div>
             </section>
 
-            <!-- Seção de Erro -->
+            <!-- Error Section -->
             <section id="errorSection" class="error-section hidden">
                 <div class="error-container">
                     <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Ops! Algo deu errado</h3>
-                    <p id="errorMessage">Erro desconhecido</p>
+                    <h3>Oops! Something went wrong</h3>
+                    <p id="errorMessage">Unknown error</p>
                     <button id="retryBtn" class="retry-btn">
                         <i class="fas fa-redo"></i>
-                        Tentar Novamente
+                        Try again
                     </button>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025 Amazon Product Scraper | Desenvolvido para fins educacionais</p>
+            <p>&copy; 2025 Amazon Product Scraper | Developed for educational pourposes </p>
         </footer>
     </div>
 
