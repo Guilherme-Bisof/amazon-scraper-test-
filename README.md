@@ -1,127 +1,127 @@
 # Amazon Product Scraper
 
-🛒 **Uma aplicação completa para extrair informações de produtos da Amazon usando web scraping**
+🛒 **A complete application to extract Amazon product information using web scraping**
 
-Este projeto consiste em uma API backend construída com **Bun** e **Express** que faz scraping da Amazon, e um frontend responsivo desenvolvido com **HTML, CSS e JavaScript vanilla** usando **Vite**.
+This project consists of a backend API built with **Bun** and **Express** that scrapes Amazon, and a responsive frontend developed with **HTML, CSS, and vanilla JavaScript** using **Vite**.
 
-## 📋 Índice
+## 📋 Table of Contents
 
-- [Características](#características)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Como Executar](#como-executar)
-- [Uso da API](#uso-da-api)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Funcionalidades](#funcionalidades)
-- [Solução de Problemas](#solução-de-problemas)
-- [Considerações Legais](#considerações-legais)
-- [Contribuição](#contribuição)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [How to Run](#how-to-run)
+- [API Usage](#api-usage)
+- [Project Structure](#project-structure)
+- [Functionality](#functionality)
+- [Troubleshooting](#troubleshooting)
+- [Legal Considerations](#legal-considerations)
+- [Contributing](#contributing)
 
-## ✨ Características
+## ✨ Features
 
-- 🔍 **Scraping Inteligente**: Extrai título, rating, número de reviews, imagem e preço dos produtos
-- 🎨 **Interface Moderna**: Design responsivo inspirado na Amazon
-- ⚡ **Performance**: Backend otimizado com Bun e frontend com Vite
-- 🛡️ **Tratamento de Erros**: Sistema robusto de error handling
-- 📱 **Responsivo**: Funciona perfeitamente em desktop e mobile
-- 🔄 **Loading States**: Indicadores visuais de carregamento
-- 🎯 **Validação**: Validação de input em tempo real
+- 🔍 **Smart Scraping**: Extracts product title, rating, number of reviews, image, and price
+- 🎨 **Modern Interface**: Responsive design inspired by Amazon
+- ⚡ **Performance**: Backend optimized with Bun and frontend with Vite
+- 🛡️ **Error Handling**: Robust error handling system
+- 📱 **Responsive**: Works perfectly on desktop and mobile
+- 🔄 **Loading States**: Visual loading indicators
+- 🎯 **Validation**: Real-time input validation
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 ### Backend
-- **[Bun](https://bun.sh/)** - Runtime JavaScript ultra-rápido
-- **[Express.js](https://expressjs.com/)** - Framework web minimalista
-- **[Axios](https://axios-http.com/)** - Cliente HTTP para requisições
-- **[JSDOM](https://github.com/jsdom/jsdom)** - Implementação DOM para Node.js
-- **[CORS](https://github.com/expressjs/cors)** - Middleware para Cross-Origin Resource Sharing
+- **[Bun](https://bun.sh/)** - Ultra-fast JavaScript runtime
+- **[Express.js](https://expressjs.com/)** - Minimalist web framework
+- **[Axios](https://axios-http.com/)** - HTTP client for requests
+- **[JSDOM](https://github.com/jsdom/jsdom)** - DOM implementation for Node.js
+- **[CORS](https://github.com/expressjs/cors)** - Middleware for Cross-Origin Resource Sharing
 
 ### Frontend
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização moderna com Flexbox e Grid
-- **JavaScript ES6+** - Lógica da aplicação
-- **[Vite](https://vitejs.dev/)** - Build tool e dev server
-- **[Font Awesome](https://fontawesome.com/)** - Ícones
+- **HTML5** - Semantic structure
+- **CSS3** - Modern styling with Flexbox and Grid
+- **JavaScript ES6+** - Application logic
+- **[Vite](https://vitejs.dev/)** - Build tool and dev server
+- **[Font Awesome](https://fontawesome.com/)** - Icons
 
-## 📦 Pré-requisitos
+## 📦 Prerequisites
 
-Antes de começar, certifique-se de ter instalado:
+Before you start, make sure you have installed:
 
-- **[Bun](https://bun.sh/)** - Versão 1.0.0 ou superior
-- **[Node.js](https://nodejs.org/)** - Versão 18.0.0 ou superior (para Vite)
-- **[Git](https://git-scm.com/)** - Para clonar o repositório
+- **[Bun](https://bun.sh/)** - Version 1.0.0 or higher
+- **[Node.js](https://nodejs.org/)** - Version 18.0.0 or higher (for Vite)
+- **[Git](https://git-scm.com/)** - To clone the repository
 
-### Instalação do Bun
+### Installing Bun
 
 ```bash
-# No Windows (PowerShell)
+# On Windows (PowerShell)
 irm bun.sh/install.ps1 | iex
 
-# No macOS/Linux
+# On macOS/Linux
 curl -fsSL https://bun.sh/install | bash
 ```
 
-## 🚀 Instalação
+## 🚀 Installation
 
-### 1. Clone o Repositório
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/seu-usuario/amazon-scraper.git
+git clone https://github.com/your-username/amazon-scraper.git
 cd amazon-scraper
 ```
 
-### 2. Configure o Backend
+### 2. Set up the Backend
 
 ```bash
 cd backend
 bun install
 ```
 
-### 3. Configure o Frontend
+### 3. Set up the Frontend
 
 ```bash
 cd ../frontend
 npm install
 ```
 
-## ▶️ Como Executar
+## ▶️ How to Run
 
-### 1. Iniciar o Backend (Terminal 1)
+### 1. Start the Backend (Terminal 1)
 
 ```bash
 cd backend
 bun run dev
 ```
 
-O servidor estará disponível em: `http://localhost:3000`
+The server will be available at: `http://localhost:3000`
 
-### 2. Iniciar o Frontend (Terminal 2)
+### 2. Start the Frontend (Terminal 2)
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-O frontend estará disponível em: `http://localhost:5173`
+The frontend will be available at: `http://localhost:5173`
 
-### 3. Acessar a Aplicação
+### 3. Access the Application
 
-Abra seu navegador e acesse `http://localhost:5173`
+Open your browser and go to `http://localhost:5173`
 
-## 🔗 Uso da API
+## 🔗 API Usage
 
-### Endpoints Disponíveis
+### Available Endpoints
 
-#### 1. Scraping de Produtos
+#### 1. Product Scraping
 ```http
-GET /api/scrape?keyword=termo_de_busca
+GET /api/scrape?keyword=search_term
 ```
 
-**Parâmetros:**
-- `keyword` (string, obrigatório): Termo de busca para produtos
+**Parameters:**
+- `keyword` (string, required): Search term for products
 
-**Exemplo de Resposta:**
+**Example Response:**
 ```json
 {
   "success": true,
@@ -146,181 +146,181 @@ GET /api/scrape?keyword=termo_de_busca
 GET /api/health
 ```
 
-#### 3. Informações da API
+#### 3. API Information
 ```http
 GET /
 ```
 
-### Exemplos de Uso da API
+### API Usage Examples
 
 ```bash
-# Buscar smartphones
+# Search for smartphones
 curl "http://localhost:3000/api/scrape?keyword=smartphone"
 
-# Buscar notebooks
+# Search for laptops
 curl "http://localhost:3000/api/scrape?keyword=notebook"
 
 # Health check
 curl "http://localhost:3000/api/health"
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 amazon-scraper/
 ├── backend/                    # API Backend
-│   ├── package.json           # Dependências do backend
-│   ├── server.js              # Servidor Express principal
-│   └── scraper.js             # Lógica de web scraping
-├── frontend/                   # Interface Frontend
-│   ├── package.json           # Dependências do frontend
-│   ├── index.html             # Página principal
-│   ├── style.css              # Estilos CSS
-│   └── script.js              # JavaScript da aplicação
-└── README.md                   # Este arquivo
+│   ├── package.json           # Backend dependencies
+│   ├── server.js              # Main Express server
+│   └── scraper.js             # Web scraping logic
+├── frontend/                   # Frontend interface
+│   ├── package.json           # Frontend dependencies
+│   ├── index.html             # Main page
+│   ├── style.css              # CSS styles
+│   └── script.js              # Application JavaScript
+└── README.md                   # This file
 ```
 
-## 🎯 Funcionalidades
+## 🎯 Functionality
 
 ### Backend Features
-- ✅ Scraping robusto com múltiplos seletores CSS
-- ✅ Headers personalizados para evitar detecção de bot
-- ✅ Timeout configurável nas requisições
-- ✅ Tratamento de erros abrangente
-- ✅ API RESTful bem documentada
-- ✅ Logs detalhados para debugging
-- ✅ Cors habilitado para frontend
+- ✅ Robust scraping with multiple CSS selectors
+- ✅ Custom headers to avoid bot detection
+- ✅ Configurable request timeout
+- ✅ Comprehensive error handling
+- ✅ Well-documented RESTful API
+- ✅ Detailed logs for debugging
+- ✅ CORS enabled for frontend
 
 ### Frontend Features
-- ✅ Interface intuitiva e responsiva
-- ✅ Validação de input em tempo real
-- ✅ Estados de loading animados
-- ✅ Tratamento visual de erros
-- ✅ Grid responsivo de produtos
-- ✅ Sistema de rating com estrelas
-- ✅ Lazy loading de imagens
-- ✅ Retry automático em erros
+- ✅ Intuitive and responsive interface
+- ✅ Real-time input validation
+- ✅ Animated loading states
+- ✅ Visual error handling
+- ✅ Responsive product grid
+- ✅ Star rating system
+- ✅ Lazy image loading
+- ✅ Automatic retry on errors
 
-## 🔧 Solução de Problemas
+## 🔧 Troubleshooting
 
-### Problemas Comuns
+### Common Issues
 
-#### 1. "Servidor não está rodando"
-**Solução:**
+#### 1. "Server is not running"
+**Solution:**
 ```bash
-# Verificar se o backend está rodando
+# Check if the backend is running
 cd backend
 bun run dev
 ```
 
 #### 2. "CORS Error"
-**Causa:** Frontend e backend em portas diferentes
-**Solução:** O CORS já está configurado. Certifique-se de que o backend está rodando na porta 3000.
+**Cause:** Frontend and backend on different ports  
+**Solution:** CORS is already configured. Make sure the backend is running on port 3000.
 
-#### 3. "Poucos produtos retornados"
-**Causa:** Amazon pode estar retornando layouts diferentes
-**Solução:** O scraper já possui múltiplos seletores CSS para diferentes layouts.
+#### 3. "Few products returned"
+**Cause:** Amazon may be returning different layouts  
+**Solution:** The scraper already has multiple CSS selectors for different layouts.
 
 #### 4. "Bun command not found"
-**Solução:**
+**Solution:**
 ```bash
-# Reinstalar Bun
+# Reinstall Bun
 curl -fsSL https://bun.sh/install | bash
-source ~/.bashrc  # ou ~/.zshrc
+source ~/.bashrc  # or ~/.zshrc
 ```
 
 #### 5. "Timeout Error"
-**Causa:** Amazon pode estar lenta ou bloqueando requisições
-**Solução:** O timeout está configurado para 10 segundos. Aguarde ou tente novamente.
+**Cause:** Amazon may be slow or blocking requests  
+**Solution:** The timeout is set to 10 seconds. Wait or try again.
 
-### Logs de Debug
+### Debug Logs
 
-Para habilitar logs detalhados:
+To enable detailed logs:
 
 ```bash
-# Backend com logs detalhados
+# Backend with detailed logs
 cd backend
 DEBUG=* bun run dev
 
-# Ver logs do frontend no console do navegador
-# Abra DevTools (F12) > Console
+# View frontend logs in the browser console
+# Open DevTools (F12) > Console
 ```
 
-### Testando os Endpoints
+### Testing Endpoints
 
 ```bash
-# Testar conectividade
+# Test connectivity
 curl http://localhost:3000/api/health
 
-# Testar scraping simples
+# Simple scraping test
 curl "http://localhost:3000/api/scrape?keyword=test"
 ```
 
-## ⚖️ Considerações Legais
+## ⚖️ Legal Considerations
 
-> **⚠️ IMPORTANTE:** Este projeto é apenas para fins educacionais e demonstração técnica.
+> **⚠️ IMPORTANT:** This project is for educational and demonstration purposes only.
 
-- 📖 **Uso Educacional**: Destinado ao aprendizado de web scraping e desenvolvimento web
-- 🤖 **Robots.txt**: Respeite sempre o arquivo robots.txt dos sites
-- 🚫 **Rate Limiting**: Não faça requisições excessivas que possam sobrecarregar os servidores
-- 📜 **Termos de Serviço**: Leia e respeite os termos de serviço da Amazon
-- 🛡️ **Responsabilidade**: Use com responsabilidade e ética
+- 📖 **Educational Use**: Intended for learning web scraping and web development
+- 🤖 **Robots.txt**: Always respect the site's robots.txt file
+- 🚫 **Rate Limiting**: Do not make excessive requests that may overload servers
+- 📜 **Terms of Service**: Read and respect Amazon's terms of service
+- 🛡️ **Responsibility**: Use responsibly and ethically
 
-### Boas Práticas Implementadas
+### Best Practices Implemented
 
-- ✅ Headers que simulam navegadores reais
-- ✅ Timeout nas requisições para evitar sobrecarga
-- ✅ Tratamento gentil de erros
-- ✅ Não armazenamento de dados pessoais
-- ✅ Foco apenas em informações públicas
+- ✅ Headers that simulate real browsers
+- ✅ Request timeout to avoid overload
+- ✅ Gentle error handling
+- ✅ No storage of personal data
+- ✅ Focus only on public information
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-Contribuições são bem-vindas! Siga estas etapas:
+Contributions are welcome! Follow these steps:
 
-### 1. Fork do Projeto
+### 1. Fork the Project
 ```bash
-gh repo fork https://github.com/seu-usuario/amazon-scraper.git
+gh repo fork https://github.com/your-username/amazon-scraper.git
 ```
 
-### 2. Criar Branch
+### 2. Create a Branch
 ```bash
-git checkout -b feature/nova-funcionalidade
+git checkout -b feature/new-feature
 ```
 
-### 3. Commit das Alterações
+### 3. Commit Your Changes
 ```bash
-git commit -m "feat: adiciona nova funcionalidade"
+git commit -m "feat: add new feature"
 ```
 
-### 4. Push para Branch
+### 4. Push to Branch
 ```bash
-git push origin feature/nova-funcionalidade
+git push origin feature/new-feature
 ```
 
-### 5. Abrir Pull Request
-Crie um Pull Request detalhando suas alterações.
+### 5. Open a Pull Request
+Create a Pull Request detailing your changes.
 
-### Diretrizes de Contribuição
+### Contribution Guidelines
 
-- 📝 Siga os padrões de código existentes
-- ✅ Adicione testes quando necessário
-- 📚 Atualize a documentação
-- 🐛 Reporte bugs com detalhes
-- 💡 Sugira melhorias via Issues
+- 📝 Follow existing code standards
+- ✅ Add tests when necessary
+- 📚 Update documentation
+- 🐛 Report bugs with details
+- 💡 Suggest improvements via Issues
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 📞 Suporte
+## 📞 Support
 
-- 🐛 **Bugs**: Abra uma [Issue](https://github.com/seu-usuario/amazon-scraper/issues)
-- 💡 **Sugestões**: Use as [Discussions](https://github.com/seu-usuario/amazon-scraper/discussions)
-- 📧 **Email**: seu-email@exemplo.com
+- 🐛 **Bugs**: Open an [Issue](https://github.com/your-username/amazon-scraper/issues)
+- 💡 **Suggestions**: Use [Discussions](https://github.com/your-username/amazon-scraper/discussions)
+- 📧 **Email**: your-email@example.com
 
 ---
 
-**Desenvolvido com ❤️ para fins educacionais**
+**Developed with ❤️ for educational purposes**
 
-⭐ Se este projeto te ajudou, considere dar uma estrela no GitHub!
+⭐ If this project helped you, consider giving it a star on GitHub!
